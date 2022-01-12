@@ -3,7 +3,7 @@
 void printSubStr(char* str, int low, int high)
 {
     int i;
-	for (i = low; i <= high; ++i)
+    for (i = low; i <= high; ++i)
         printf("%c", str[i]);
 }
 
