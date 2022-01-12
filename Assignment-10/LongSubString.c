@@ -18,14 +18,14 @@ int longestPalSubstr(char* str)
         low = i - 1;
         high = i;
         while (low >= 0 && high < len && str[low] == str[high]) 
-		{
+	{
             --low;
             ++high;
         }
         ++low; 
-		--high;
+	--high;
         if (str[low] == str[high] && high - low + 1 > maxLength) 
-		{
+	{
             start = low;
             maxLength = high - low + 1;
         }
@@ -37,9 +37,9 @@ int longestPalSubstr(char* str)
             ++high;
         }
         ++low;
-		--high;
+	--high;
         if (str[low] == str[high] && high - low + 1 > maxLength) 
-		{
+	{
             start = low;
             maxLength = high - low + 1;
         }
